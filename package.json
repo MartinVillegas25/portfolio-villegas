@@ -1,0 +1,14 @@
+{
+  "name": "potfolio-page",
+  "version": "1.0.0",
+  "description": "page portfolio Martin Villegas y Emanuel Villegas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Villegas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
