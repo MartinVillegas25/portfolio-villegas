@@ -1,0 +1,40 @@
+/*martin opening rever*/
+
+@media only screen and (max-width:1300px){
+    div.header-left h1{
+        font-size:41px;
+        left: 10%;
+        bottom: 60%;
+    }
+}
+
+@media only screen and (max-width:809px){
+    
+section.opening{
+    display:flex;  
+flex-direction:column-reverse;
+    max-height: 100vh;
+}
+div.header-left, div.header-right{
+    width: 100vw;
+    
+}
+div.header-left{
+    background-color: transparent;
+}
+
+div.header-left h1{
+    bottom: 0;
+    left:3rem;
+    
+}
+}
+@media only screen and (max-width:560px){
+div.button-container button{
+ width: 90%;   
+}
+    div.button-container{
+        left: 0;
+        margin: auto;
+    }
+}    

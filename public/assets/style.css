@@ -11,6 +11,7 @@
 :root{
     --font-size-titles: 60px;
     --font-size-subtitles: 43px;
+    --font-size-h3:32px;
     --font-size-description:16px;
     --font-family-titles: 'Syncopate', sans-serif;
     --font-family-description:'Roboto Condensed', sans-serif;
@@ -24,8 +25,11 @@ h1{
     font-size: var(--font-size-titles);
     
 }
-h2,h3,h4,h5{
+h2{
     font-size: var(--font-size-subtitles);
+}
+h3,h4,h5,h6{
+    font-size: var(--font-size-h3);
 }
 p,span{
     font-family: var(--font-family-description);
@@ -46,6 +50,7 @@ section.opening{
     height: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
 
 }
 .header-left{
@@ -53,13 +58,13 @@ section.opening{
     -moz-border-radius: 0px 0px 0px 700px;
     -webkit-border-radius: 0px 0px 0px 700px;
     border: 0px solid #000000;
-    width:55vw;
+    width:55%;
     height: 550px;
     background-color: #000;
     position: relative;
 }
 .header-right{
-    width:45vw;
+    width:45%;
     height: 550px;
     position: relative;
     
@@ -76,11 +81,16 @@ div.button-container button{
 }
 video {
     position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    z-index: -1;
+    object-fit:cover;
+    width:100%;
+    height:100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;    
   }
+
+
 div.text-opening{
     position: absolute;
     top: 0;
@@ -323,6 +333,7 @@ h2{
 /*portfolio 2.0*/
 div.swiffy-slider{
     position: relative;
+    width: 99%;
 }
 h2.portfolio-title{
    color:#fff;
@@ -435,7 +446,6 @@ section.services{
     
 }
 section.services h2{
-    font-size:43px;
     padding-bottom: 51px;
 }
 div.service{
