@@ -57,10 +57,12 @@ section.opening{
     border-radius: 0px 0px 0px 700px;
     -moz-border-radius: 0px 0px 0px 700px;
     -webkit-border-radius: 0px 0px 0px 700px;
-    border: 0px solid #000000;
+    border: 0px solid #000;
     width:55%;
     height: 550px;
-    background-color: #000;
+    background-color: #020C3E;
+
+background-size: cover;
     position: relative;
 }
 .header-right{
@@ -110,7 +112,7 @@ ul li.items{
 
 ul.nav{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-decoration: none;
     padding-top:10px;
     max-width: 1600px;
@@ -169,11 +171,11 @@ button.light{
 
 button.light:hover{
     background-color: #fff;
-    color: #000;
+    color: #020C3E;
 }
 button.dark{
-    border-color:#000;
-    color:#000;
+    border-color:#020C3E;
+    color:#020C3E;
     background-color: transparent;
     padding:21px 42px;
     font-family: var(--font-family-titles);
@@ -182,7 +184,7 @@ button.dark{
     cursor: pointer;
 }
 button.dark:hover{
-    background-color: #000;
+    background-color: #020C3E;
     color: #fff;
 }
 /*about section*/
@@ -331,6 +333,10 @@ h2{
 
 
 /*portfolio 2.0*/
+a.link-portfolio:hover ul li button.light{
+    background-color: #fff;
+    color: #020C3E;
+}
 div.swiffy-slider{
     position: relative;
     width: 99%;
@@ -341,7 +347,10 @@ h2.portfolio-title{
    
 }
 section.portfolio2{
-    background-color: #000;
+    background-color: #020C3E;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
     padding:96px 0;
 
 }
@@ -362,7 +371,7 @@ ul.portfolio-description button:hover a{
     color: #000;
 }
 ul.slider-container img{
-     opacity: 0.7;
+     opacity: 0.9;
 }
 
 ul.portfolio-description li{
@@ -391,7 +400,7 @@ p.close{
 }
 /*portfolio popup */
 section.portfolio-popup{
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(2,12,62,0.8);
     height: 100%;
     width: 100vw;
     padding: 136px 0;
@@ -477,20 +486,22 @@ div.service-content h3{
     color:#000;
     padding-bottom: 21px;
     text-align: center;
-    width: 70%;
-    margin: auto;
+    
+    
 }
 div.service-content p{
-    width:70%;
+    
     text-align: center;
     color:#000;
-    margin: auto;
+    
 }
 
 /*footer*/
 
 footer{
-    background-color: #000;
+    background-color: #020C3E;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
     
     height: 100%;
     min-height: 250px;
@@ -537,7 +548,7 @@ p.close-contact{
     right: 10%;
 }
 div.contact-form{
-    background-color:rgba(0, 0, 0, 0.7);
+    background-color:rgb(2,12,62,0.8);
     width: 100vw;
     height: 100vh;
     position: fixed;

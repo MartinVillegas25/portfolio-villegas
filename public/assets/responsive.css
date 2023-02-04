@@ -1,6 +1,6 @@
 /*martin opening rever*/
 
-@media only screen and (max-width:1300px){
+@media only screen and (min-width:809px) and (max-width:1300px){
     div.header-left h1{
         font-size:41px;
         left: 10%;
@@ -25,7 +25,9 @@ div.header-left{
 
 div.header-left h1{
     bottom: 0;
-    left:3rem;
+    left:0;
+    font-size: 35px;
+    text-align: center;
     
 }
 }
@@ -33,8 +35,109 @@ div.header-left h1{
 div.button-container button{
  width: 90%;   
 }
-    div.button-container{
+div.header-right .button-container{
         left: 0;
-        margin: auto;
+        margin: 0;
+        
+
     }
 }    
+
+
+/*services*/
+@media only screen and (max-width:768px){
+    div.service-content h3{
+        font-size: 24px;
+        text-align: start;
+        margin-top: 21px;
+
+    }
+    div.service{
+        margin-bottom: 41px;
+    }
+    div.service-content p{
+        text-align: start;
+    }
+    section.services h2{
+        padding-bottom: 25px;
+    }
+    div.service-content{
+        width:100%;
+        margin: 0;
+    }
+    section.services{
+        padding: 48px 25px 7px 25px;
+        
+    }
+    div.service-image{
+        width: 100%;
+    }
+    div.service-image img{
+        width: 100%;
+        height: 100%;
+    }
+    section.services > div:nth-child(3) div.service-image{
+        order: 1;
+    }
+    section.services > div:nth-child(3) div.service-content{
+        order: 2;
+    }
+}
+
+/*about*/
+@media only screen and (max-width:768px){
+    div.bio{
+        margin:0;
+        text-align: start;
+        max-width: 600px;
+        width: 100%;
+    }
+    div.bio p{
+        font-size: 16px;
+    }
+    div.bio h2{
+        padding-bottom:5px;
+        padding-top:21px;
+    }
+    div.image{
+        width: 100%;
+    
+    }
+    section.about{
+        padding:48px 25px;
+    }
+    section.about div.bio{  
+        order:2;        
+    }
+    section.about div.image{  
+        order:1;        
+    }
+}
+
+/*tecnologias*/
+@media only screen and (max-width:768px){
+    .slider .slide{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/*portfolio*/
+@media only screen and (max-width:768px){
+        ul.portfolio-description li{
+            font-size:16px;
+        }
+        button#learn-more{
+            display: none;
+        }
+    section.portfolio2{
+        background-attachment: unset;
+    }
+    ul.portfolio-description{
+        bottom: 0;
+        font-size:14px;
+        left: 10%;
+    }
+   
+}
+
