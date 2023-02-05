@@ -4,7 +4,8 @@ const contactButton = document.querySelector('#contact-button');
 const porfolioButton = document.querySelector('#portfolio-button');
 const portfolioPopup = document.querySelector('.portfolio-popup');
 const closeContact = document.querySelector('.close-contact');
-
+const menu = document.querySelector('.ham');
+const nav = document.querySelector('.nav');
 //conctact popuo
 contactButton.addEventListener('click', () => {
     contactForm.classList.add('active');
@@ -21,3 +22,10 @@ porfolioButton.addEventListener('click', () => {
 close.addEventListener('click', () => {
     portfolioPopup.classList.remove('active');
 });
+
+//menu popup
+
+menu.addEventListener('click', () => {
+    nav.classList.toggle('active');
+
+})

@@ -141,3 +141,44 @@ div.header-right .button-container{
    
 }
 
+
+/*menu hamburguesa*/
+@media only screen and (max-width:768px){
+    .ham{
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+         
+       } 
+
+       ul.nav{
+        position: fixed;
+        top: 0;
+        display: flex;
+        flex-direction:column;
+        padding: 85px 0 0 0;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        background-color:rgba(2,12,62,0.8);
+        display: none;
+    }
+    ul.nav.active{
+        display: block;
+    }
+    li.items{
+       width: 100%;
+       text-align: center;
+       padding: 25px;
+       } 
+       li.items:hover{
+        background-color: #fff;
+        color: #000;
+       }
+
+      
+
+
+}
