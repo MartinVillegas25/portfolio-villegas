@@ -4,6 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META name="author" content="Martin Villegas">
+        <META name="copyright" content="martin villegas">
+        <META name="keywords" content="developer, web design, web, ux, site, website, pagina web, sitio, desarrolladores ">
+        <meta name="description" content="We are a family team who loves technology, with a year of experience working in this world, we would be happy to help you to improve your business and help you to grow up.  ">
+    
+        <!-- Twitter Card data -->
+    <meta name="twitter:card" content="Villegas team">
+    <meta name="twitter:site" content="Web Developers">
+    <meta name="twitter:title" content="Villegas team">
+    <meta name="twitter:description" content="We are a family team who loves technology, with a year of experience working in this world, we would be happy to help you to improve your business and help you to grow up. ">
+    <meta name="twitter:creator" content="">
+    
+    <!-- Twitter Summary card images. Igual o superar los 200x200px -->
+    <meta name="twitter:image" content="https://developers.martinvillegas.repl.co/assets/about.png">
+    
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Villegas team" />
+    <meta property="og:type" content="Web Developers" />
+    <meta property="og:url" content=" https://developers.martinvillegas.repl.co" />
+    <meta property="og:image" content="https://developers.martinvillegas.repl.co/assets/about.png" />
+    <meta property="og:description" content="We are a family team who loves technology, with a year of experience working in this world, we would be happy to help you to improve your business and help you to grow up." />
+    <meta property="og:site_name" content="Villegas Martin" property="fb:admins" content="ID de Facebook" />
+    
+
+
+
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
@@ -19,11 +45,12 @@
 </head>
 <body>
     <nav class="navbar">
-         <a class="logo" href="#"> <img src="./assets/logo.png" alt="logo"></a>
+         <a class="logo" href="#"> <img src="./assets/logo (2).png" alt="logo"></a>
         <ul class="nav">
-            <li class="items">Porfolio</li>
-            <li class="items">About Us</li>
-            <li class="items"> Contact</li>
+            <li class="items"><a href="#about"> About Us <span class="after"></span></a></li>
+            <li class="items"><a href="#portfolio">Portfolio <span class="after"></span></a> </li>
+            <li class="items"><a href="#services"> Services<span class="after"></span></a></li>
+            <li id="contact-button-nav"  class="items">Contact Us<span class="after"></span></li>
             <!-- menu hamburger -->
             
         </ul>
@@ -34,11 +61,14 @@
         </button>
     </nav>
     <section class="opening">
-        <video src="./assets/9e6d5271.mp4" autoplay loop muted></video>
+        <video playsinline autoplay loop muted poster="./assets/POSTER.jpg">
+            <source src="./assets/9e6d5271.mp4" type="video/mp4">
+            <source src="./assets/9e6d5271.webm" type="video/webm">
+        </video>
         <div class="header-right">
             <div class="button-container">
-                <button id="contact-button" class="light">Contact Us</button>
-                <button class="light">Schedule a Meeting</button>
+                <button id="contact-button-opening" class="light">Contact Us</button>
+                <button class="light"><a class="light" target="_blank" href="https://calendly.com/villegasgmartin/fisrt-meeting?month=2023-02&date=2023-02-06">Schedule a Meeting</a> </button>
             </div>
         </div>
         <div class="header-left">
@@ -48,23 +78,28 @@
             
         
     </section>
-    <section class="about">
+    <section id="about" class="about">
         <div class="bio">
             <h2> About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, magnam voluptas culpa laboriosam deserunt at id distinctio aspernatur ad ullam pariatur, doloremque explicabo, itaque architecto. Consectetur voluptatum nihil consequuntur ab!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, magnam voluptas culpa laboriosam deserunt at id distinctio aspernatur ad ullam pariatur, doloremque explicabo, itaque architecto. Consectetur voluptatum nihil consequuntur ab!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, magnam voluptas culpa laboriosam deserunt at id distinctio aspernatur ad ullam pariatur, doloremque explicabo, itaque architecto. Consectetur voluptatum nihil consequuntur ab!</p>
+           <p>We are a family team who loves technology, with a year of experience working in this world, we would be happy to help you to improve your business and help you to grow up. </p>
+           <br>
+           <p>In addition, we can offer you personal attention with any details; I am one hundred percent sure you will be happy to work together.</p>  
+           <br>
+           <p>Let us be part of your world to grow up to perfection. 
+            You can check about our skills on the following CVs.
+
+           </p> 
             <div class="button-container">
-                <button id="contact-button" class="dark">CV Martin</button>
-                <button class="dark">CV Emanuel</button>
+                <button id="contact-button" class="dark"> <a class="cv" target="_blank" href="https://drive.google.com/file/d/1naLtiaY2oQty4MtqyAZO41obyzwUggQc/view?usp=sharing">CV Emanuel</a> </button>
+                <button class="dark"><a class="cv" target="_blank" href="https://drive.google.com/file/d/1mIK55QkCVCrKV-JdnQOTiu-XLNSAxlBN/view?usp=sharing">CV Martin</a> </button>
             </div>
         </div>
         <div class="image">
-            <img src="./assets/foto1.jpg" alt="about">
+            <img src="./assets/about.png" alt="about">
         </div>
     </section>
 
-    <section class="tecnology">
+    <section  class="tecnology">
         <h2>Our Skills</h2>
         <div class="slider">
             <div class="slide-track">
@@ -170,28 +205,35 @@
    </section> -->
 
    <!--porfolio 2.0-->
-   <section class="portfolio2">
+   <section id="portfolio" class="portfolio2">
     <div class="swiffy-slider">
-        <h2 class="portfolio-title">Portolio</h2>
+        <h2 class="portfolio-title">Portfolio</h2>
         <br>
         <ul class="slider-container">
-            <a class="link-portfolio" href="#"><li class="portfolio-img"><img src="./assets/portfolio/mateo calle.png"   style="max-width: 80%;height: auto;max-height:650px;">
+            <a target="_blank" class="link-portfolio" href="https://mateo-calle.martinvillegas.repl.co/"><li class="portfolio-img"><img src="./assets/portfolio/mateo calle.jpg"   style="max-width: 80%;height: auto;max-height:650px;">
                 <ul class="portfolio-description">
                     <li>Mateo Calle</li>
                     
                     <li> <button id="learn-more"  class="light">Learn More</button>  </li>
                 </ul>
             </li></a>
-            <a class="link-portfolio" href="#"><li class="portfolio-img"><img src="./assets/portfolio/luca-bravo-9l_326FISzk-unsplash.jpg"  style="max-width: 80%;height: auto;max-height:650px;" >
+            <a target="_blank" class="link-portfolio" href="https://marvi.martinvillegas.repl.co/"><li class="portfolio-img"><img src="./assets/portfolio/marviweb.jpg"  style="max-width: 80%;height: auto;max-height:650px;" >
                 <ul class="portfolio-description">
-                    <li>Proyecto 2</li>
+                    <li>Marvi</li>
                     
                     <li> <button id="learn-more"  class="light">Learn More</button>  </li>
                 </ul>
             </li></a>
-            <a class="link-portfolio" href="#"><li class="portfolio-img"><img src="./assets/portfolio/lily-banse--YHSwy6uqvk-unsplash.jpg" style="max-width: 80%;height: auto;max-height:650px;">
+            <a target="_blank" class="link-portfolio" href="https://github.com/MartinVillegas25/chat-socket"><li class="portfolio-img"><img src="./assets/portfolio/chat.jpg" style="max-width: 80%;height: auto;max-height:650px;">
                 <ul class="portfolio-description">
-                    <li>Proyecto 3</li>
+                    <li>Chat Socket</li>
+                    
+                    <li> <button id="learn-more" class="light">Learn More</button>  </li>
+                </ul>
+            </li></a>
+            <a target="_blank" class="link-portfolio" href="https://github.com/MartinVillegas25/weatherapp"><li class="portfolio-img"><img src="./assets/portfolio/weather app (1).jpg" style="max-width: 80%;height: auto;max-height:650px;">
+                <ul class="portfolio-description">
+                    <li>Weather App</li>
                     
                     <li> <button id="learn-more" class="light">Learn More</button>  </li>
                 </ul>
@@ -219,38 +261,38 @@
        <h2>Porfolio</h2>
     <div class="list-portfolio">
         <div class="list-portfolio-item">
-            <img class="list-portfolio-img" src="./assets/portfolio/mateo calle.png" alt="">
+            <img class="list-portfolio-img" src="./assets/portfolio/mateo calle.jpg" alt="">
             <h3>Mateo Calle</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A iste, amet, perferendis enim quam ullam.</p>
-            <p>tecnologias</p>
-            <button class="light"><a href="#">Learn More</a></button> 
+            <p>Web site for an Angentian DJ ( HTML, CSS and JS)</p>
+            
+            <button class="light"><a target="_blank" href="https://mateo-calle.martinvillegas.repl.co/">Learn More</a></button> 
 
         </div>
         <div class="list-portfolio-item">
-            <img class="list-portfolio-img"  src="./assets/portfolio/luca-bravo-9l_326FISzk-unsplash.jpg" alt="">
-            <h3>Mateo Calle</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A iste, amet, perferendis enim quam ullam.</p>
-            <p>tecnologias</p>
-            <button class="light"><a href="#">Learn More</a></button> 
+            <img class="list-portfolio-img"  src="./assets/portfolio/marviweb.jpg" alt="">
+            <h3>Marvi</h3>
+            <p>Web site for an ilustrator, a place to shows his works and social connections (HTML, CSS, JS, Booststrap, NodeJS, MySql)</p>
+            
+            <button class="light"><a target="_blank" href="https://marvi.martinvillegas.repl.co/">Learn More</a></button> 
         </div>
         <div class="list-portfolio-item">
-            <img class="list-portfolio-img"  src="./assets/portfolio/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="">
-            <h3>Mateo Calle</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A iste, amet, perferendis enim quam ullam.</p>
-            <p>tecnologias</p>
-            <button class="light"><a href="#">Learn More</a></button> 
+            <img class="list-portfolio-img"  src="./assets/portfolio/weather app (1).jpg" alt="">
+            <h3>Weather App</h3>
+            <p>Weather app, connection with openweathermap API, where you can see the weather around the world</p>
+            
+            <button class="light"><a target="_blank" href="https://github.com/MartinVillegas25/weatherapp">Learn More</a></button> 
         </div>
         <div class="list-portfolio-item">
-            <img class="list-portfolio-img"  src="./assets/portfolio/hakon-sataoen-qyfco1nfMtg-unsplash.jpg" alt="">
-            <h3>Mateo Calle</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A iste, amet, perferendis enim quam ullam.</p>
-            <p>tecnologias</p>
-            <button class="light"><a href="#">Learn More</a></button> 
+            <img class="list-portfolio-img"  src="./assets/portfolio/chat.jpg" alt="">
+            <h3>Chat App</h3>
+            <p>Real time chat with Socket.io and NodeJs</p>
+            
+            <button  class="light"><a target="_blank" href="https://github.com/MartinVillegas25/chat-socket">Learn More</a></button> 
         </div>
     </div>
    </section>
     
-<section class="services">
+<section id="services" class="services">
     <h2>Services</h2>
         <div class="service">
             <div class="service-image">
@@ -258,13 +300,13 @@
             </div>
             <div class="service-content">
                 <h3>Web Responsive</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur hic, labore earum similique minima eum veritatis repudiandae! Eos at culpa, quisquam necessitatibus beatae non repellat ut eligendi corporis expedita modi.</p>
+                <p>You could see your site everywhere, PCs, tablets, cellphones, or notebooks. We pay attention to any details so that you have the best experience on any device. </p>
             </div>
         </div>
         <div class="service">
             <div class="service-content">
                 <h3>Unique Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur hic, labore earum similique minima eum veritatis repudiandae! Eos at culpa, quisquam necessitatibus beatae non repellat ut eligendi corporis expedita modi.</p>
+                <p>If you can imagine, we can build it. We don't have any template, we work hand in hand with you, improving any idea you have and doing it real. You will have a first meeting where we can discuss your project and which is the best way to do it. </p>
             </div>
             <div class="service-image">
                 <img src="./assets/design.jpg" alt="design">
@@ -276,7 +318,7 @@
             </div>
             <div class="service-content">
                 <h3>Google Search - SEO</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur hic, labore earum similique minima eum veritatis repudiandae! Eos at culpa, quisquam necessitatibus beatae non repellat ut eligendi corporis expedita modi.</p>
+                <p>We know that an important part is that potential clients find you in this magical world, so we study the best keywords to use to do your site one of the tops.</p>
             </div>
         </div>
 </section>
@@ -285,12 +327,12 @@
        <div class="contact">
             <h4>Martin Villegas</h4>
             <div class="phone">
-                <h5>Phone</h5>
+                <h5> Phone</h5>
                 <a href="tel:+5492235131130">+549(223)5-131130</a>
             </div>
             <div class="social-media">
-                <a href="https://www.linkedin.com/in/desarrolladornodejs/"><img src="./assets/socials/linkedin.png" alt="linkedin"></a>
-                <a href="https://www.instagram.com/"><img src="./assets/socials/instagram.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/desarrolladornodejs/" target="
+                _blank"><img src="./assets/socials/linkedin.png" alt="linkedin"></a>
                 <a href="mailto:"villegasgmartin@gmail.com"><img src="./assets/socials/email.png" alt=""></a>
             </div>
         </div>
@@ -298,35 +340,41 @@
             <h4>Emanuel Villegas</h4>
             <div class="phone">
                 <h5>Phone</h5>
-                <a href="tel:+5492235131130">+549(223)5-131130</a>
+                <a href="tel:+5492235803896">+549(223)5-803896</a>
             </div>
             <div class="social-media">
-                <a href="https://www.linkedin.com/in/desarrolladornodejs/"><img src="./assets/socials/linkedin.png" alt="linkedin"></a>
-                <a href="https://www.instagram.com/"><img src="./assets/socials/instagram.png" alt=""></a>
-                <a href="mailto:"villegasgmartin@gmail.com"><img src="./assets/socials/email.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/emanuel-villegas-b43715213/" target="_blank"><img src="./assets/socials/linkedin.png" alt="linkedin"></a>
+                <a href="mailto:"villegasemanuel23@gmail.com"><img src="./assets/socials/email.png" alt=""></a>
             </div>
         </div>
    </footer>
 
    <div class="contact-form ">
     <p class="close-contact"><img class="close-contact" src="./assets/letra-x.png" alt="close"></p>
-    <div class="form">
-        <h3 class="form-titles">Contact Us</h3>
-        <p class="form-titles">We are here to guide you to build your dream. Trust is earned through delivering results and great people never work alone.</p>
-        <form action="">
-            <label  for="name">Full Name*</label>
-            <input class="field" type="text" name="name" id="" required>
-            <label for="email">Email*</label>
-            <input class="field" type="email" name="email" id="" required>
-            <label for="phone">Phone</label>
-            <input class="field" type="tel" name="" id="">
-            <label for="message">Message*</label>
-            <textarea name="message" id="" cols="10" rows="5" required></textarea>
-            <input class="dark" type="submit" value="Send">
-            
-        </form>
+    <div class="contact-container">
+        <div class="form">
+            <h3 class="form-titles">Contact Us</h3>
+            <p class="form-titles">We are here to guide you to build your dream. Trust is earned through delivering results and great people never work alone.</p>
+            <form id="form" action="https://formspree.io/f/xjvdgnqy"
+            method="POST">
+                <label  for="name">Full Name*</label>
+                <input class="field" type="text" name="name" id="" required>
+                <label for="email">Email*</label>
+                <input class="field" type="email" name="email" id="" required>
+                <label for="phone">Phone</label>
+                <input class="field" type="tel" name="" id="">
+                <label for="message">Message*</label>
+                <textarea name="message" id="" cols="10" rows="5" required></textarea>
+                <span class="success">Thank you for your message</span>
+                <input class="dark" type="submit" value="Send">
+                
+            </form>
+    
+        </div>
 
     </div>
+
+    
    </div>
     <script src="./index.js"></script>
     

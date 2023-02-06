@@ -1,10 +1,25 @@
+/*font size*/
+@media only screen and (max-width: 768px){
+    :root{
+        --font-size-titles: 35px;
+        --font-size-subtitles: 32px;
+        --font-size-h3:22px;
+        --font-size-description:16px;
+        
+    
+    }
+}
+
 /*martin opening rever*/
 
 @media only screen and (min-width:809px) and (max-width:1300px){
     div.header-left h1{
-        font-size:41px;
-        left: 10%;
-        bottom: 60%;
+        font-size:35px;
+        
+    }
+    div.header-left{
+        
+       justify-content: end;
     }
 }
 
@@ -14,6 +29,7 @@ section.opening{
     display:flex;  
 flex-direction:column-reverse;
     max-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 div.header-left, div.header-right{
     width: 100vw;
@@ -21,23 +37,27 @@ div.header-left, div.header-right{
 }
 div.header-left{
     background-color: transparent;
+    align-items: end;
 }
 
 div.header-left h1{
-    bottom: 0;
-    left:0;
+    
     font-size: 35px;
     text-align: center;
     
+    
 }
 }
-@media only screen and (max-width:560px){
-div.button-container button{
+@media only screen and (max-width:768px){
+section.opening div.button-container button{
  width: 90%;   
 }
 div.header-right .button-container{
         left: 0;
         margin: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
         
 
     }
@@ -47,34 +67,37 @@ div.header-right .button-container{
 /*services*/
 @media only screen and (max-width:768px){
     div.service-content h3{
-        font-size: 24px;
+        font-size: 21px;
         text-align: start;
         margin-top: 21px;
 
     }
     div.service{
-        margin-bottom: 41px;
+        padding-bottom: 24px;
     }
     div.service-content p{
         text-align: start;
+        font-size: 16px;
     }
     section.services h2{
         padding-bottom: 25px;
     }
     div.service-content{
-        width:100%;
-        margin: 0;
+        width:90%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding:0;
     }
     section.services{
-        padding: 48px 25px 7px 25px;
+        padding: 48px 25px 24px 25px;
         
     }
     div.service-image{
         width: 100%;
     }
     div.service-image img{
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
     }
     section.services > div:nth-child(3) div.service-image{
         order: 1;
@@ -85,12 +108,19 @@ div.header-right .button-container{
 }
 
 /*about*/
-@media only screen and (max-width:768px){
+
+@media only screen and (min-width:1176px) and (max-width:1300px){
+    div.bio{
+        padding-right: 24px;
+    }
+}
+@media only screen and (max-width:1130px){
     div.bio{
         margin:0;
         text-align: start;
         max-width: 600px;
         width: 100%;
+        margin: 0 auto;
     }
     div.bio p{
         font-size: 16px;
@@ -101,6 +131,7 @@ div.header-right .button-container{
     }
     div.image{
         width: 100%;
+        text-align: center;
     
     }
     section.about{
@@ -111,6 +142,9 @@ div.header-right .button-container{
     }
     section.about div.image{  
         order:1;        
+    }
+    div.bio button.dark{
+        width: 100%;
     }
 }
 
@@ -132,15 +166,28 @@ div.header-right .button-container{
         }
     section.portfolio2{
         background-attachment: unset;
+        padding:48px 25px;
     }
     ul.portfolio-description{
         bottom: 0;
         font-size:14px;
-        left: 10%;
+        left: 12%;
+        bottom: 1rem;
+    }
+    div.swiffy-slider{
+        width:99%;
     }
    
+   
 }
+/*buttons*/
+@media only screen and (max-width:768px){
+    button.light, button.dark{
+        width: 90%;
+    }
 
+
+}
 
 /*menu hamburguesa*/
 @media only screen and (max-width:768px){
@@ -155,6 +202,8 @@ div.header-right .button-container{
        ul.nav{
         position: fixed;
         top: 0;
+        left: 0;
+        right: 0;
         display: flex;
         flex-direction:column;
         padding: 85px 0 0 0;
@@ -164,11 +213,12 @@ div.header-right .button-container{
         width: 100%;
         background-color:rgba(2,12,62,0.8);
         display: none;
+
     }
     ul.nav.active{
         display: block;
     }
-    li.items{
+     ul li.items{
        width: 100%;
        text-align: center;
        padding: 25px;
@@ -181,4 +231,76 @@ div.header-right .button-container{
       
 
 
+}
+
+/*footer*/
+@media only screen and (max-width: 768px){
+    footer{
+        background-attachment: unset;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        padding: 48px 25px 25px;
+    }
+    div.contact{
+        display: block;
+    }
+    div.contact div.phone{
+        width:100%;
+    }
+    div.contact .social-media {
+        padding-top:21px;
+    }
+    footer > div:nth-child(2) > div.phone{
+        margin-left:0;
+    }
+}
+
+/*contact form*/
+@media only screen and (max-width:768px){
+    img.close-contact{
+        filter: invert(0);
+    }
+    p.close-contact{
+        
+        top:2rem;
+        
+    }
+    div.form{
+        padding: 60px 25px;
+        width: 100%;
+        height: 100vh;
+
+    }
+    h3.form-titles, p.form-titles{
+        padding: 15px 0;
+        width: 100%;
+
+    }
+    input.field{
+        width: 100%;;
+    }
+    label{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+    span.success{
+        width:100%;        
+    
+    }
+}
+
+/*portofolio poopup*/
+@media only screen and (max-width:768px){
+    div.list-portfolio-item{
+        width:100%;
+        padding:21px 25px;
+    }
+    section.portfolio-popup{
+        z-index: 9999;
+    }
+    div.list-portfolio-item button{
+        width: 100%;
+    }
 }
