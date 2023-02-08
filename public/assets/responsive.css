@@ -1,7 +1,7 @@
 /*font size*/
 @media only screen and (max-width: 768px){
     :root{
-        --font-size-titles: 35px;
+        --font-size-titles: 41px;
         --font-size-subtitles: 32px;
         --font-size-h3:22px;
         --font-size-description:16px;
@@ -12,55 +12,45 @@
 
 /*martin opening rever*/
 
-@media only screen and (min-width:809px) and (max-width:1300px){
-    div.header-left h1{
-        font-size:35px;
-        
-    }
-    div.header-left{
-        
-       justify-content: end;
-    }
-}
+
 
 @media only screen and (max-width:809px){
     
 section.opening{
+    
     display:flex;  
-flex-direction:column-reverse;
+    flex-direction:column-reverse;
     max-height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
 }
-div.header-left, div.header-right{
+.poster{
+    position:absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    background-image:url('./mobile\ opening.jpg');
+    background-size: cover;
+    opacity: 1;
+    z-index: 1;
+   
+}
+
+div.header{
     width: 100vw;
     
 }
-div.header-left{
-    background-color: transparent;
-    align-items: end;
-}
 
-div.header-left h1{
-    
-    font-size: 35px;
-    text-align: center;
-    
-    
+
+h1{
+    text-align: center; 
+    padding-left:0px;   
 }
 }
 @media only screen and (max-width:768px){
 section.opening div.button-container button{
  width: 90%;   
 }
-div.header-right .button-container{
-        left: 0;
-        margin: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        
 
-    }
 }    
 
 
@@ -211,7 +201,7 @@ div.header-right .button-container{
         align-items: center;
         height: auto;
         width: 100%;
-        background-color:rgba(2,12,62,0.8);
+        background-color:rgba(0,0,0,0.8);
         display: none;
 
     }
@@ -248,7 +238,7 @@ div.header-right .button-container{
         width:100%;
     }
     div.contact .social-media {
-        padding-top:21px;
+        padding-top:11px;
     }
     footer > div:nth-child(2) > div.phone{
         margin-left:0;
