@@ -43,6 +43,18 @@ a, li, button {
     font-size: var(--font-size-description);
     text-transform: uppercase;
 }
+
+/*loader*/
+#loader{
+    background: #000 url('./imagenes/loader.gif') no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    background-size: 20%;
+
+}
 /*opening section */
 
 
@@ -51,6 +63,7 @@ section.opening{
     width: 100%;
     min-height: 550px;
     height: 100vh;  
+    
 
 }
 
@@ -128,7 +141,7 @@ ul.nav{
     position: absolute;
     top: 15px;
     right: 5%;    
-    z-index: 999;
+    z-index: 99;
 
     
 
@@ -143,7 +156,7 @@ ul.nav a{
   margin: 0;  
   padding: 0;  
   background-color: transparent;
-  z-index: 9999;
+  z-index: 99;
   background-color:#000;
   border-radius: 50%;
   width:55px;
@@ -170,7 +183,7 @@ a.logo img{
     position: absolute;
     top:20px;
     left: 20px;
-    z-index: 9999;
+    z-index: 99;
 }
 
 a.light{

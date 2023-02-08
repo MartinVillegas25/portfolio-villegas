@@ -59,3 +59,14 @@ async function handleSubmit(event) {
         message.classList.add('active');
     }
 }
+
+//loader
+
+const loader = document.querySelector('#loader');
+
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        loader.style.display = 'none';
+        
+    }, 1000);
+});
