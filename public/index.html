@@ -41,7 +41,7 @@
 <!-- menu hamburger -->
 
      
-    <title>Villegas Team | Web Developers</title>
+    <title>M & E Design | Web Developers</title>
 </head>
 <body>
     <div id="loader"></div>
@@ -61,41 +61,65 @@
             <span class="br"></span>
         </button>
     </nav>
-    <section class="opening">
-        <video src="./assets/imagenes/video.mp4" playsinline autoplay loop muted>
+    <section id="header" class="opening">
+        <video src="./assets/imagenes/video2.mp4" playsinline autoplay loop muted>
             
         </video>
-        <div class="header">
+        <div  class="header">
             <div class="button-container">
-                <h1>M & E team</h1>
+                <div class="title-rotate">
+                    <ul>
+                        <li>Unique design</li>
+                        <li>Work hand in hand with the client</li>
+                        <li>Your best option</li>
+                    </ul>
+                </div>
+                <h1 class="focus-in-contract">M & E Design</h1>
                 <button id="contact-button-opening" class="light">Contact Us</button>
                 <a class="light" target="_blank" href="https://calendly.com/villegasgmartin/fisrt-meeting?month=2023-02&date=2023-02-06"><button class="light">Schedule a Meeting</button></a> 
             </div>
         </div>
         <div id="poster"></div>
             
-        
+       <div class="arrow-up">
+        <a href="#header"><img src="./assets/imagenes/up.png" alt="arrow-up" class="up"></a>
+       </div> 
     </section>
     
     <section id="about" class="about">
         <div class="bio">
             <h2> About Us</h2>
-           <p>We are a family team who loves technology, with a year of experience working in this world, we would be happy to help you to improve your business and help you to grow up. </p>
-           <br>
-           <p>In addition, we can offer you personal attention with any details; I am one hundred percent sure you will be happy to work together.</p>  
-           <br>
-           <p>Let us be part of your world to grow up to perfection. 
-            You can check about our skills on the following CVs.
+           <p>We are a family team who loves technology, with a year of experience working in this world, we would be happy to help you to improve your business and help you to grow up. 
+           In addition, we can offer you personal attention with any details; I am one hundred percent sure you will be happy to work together.
+           Let us be part of your world to grow up to perfection. 
+            Click on the following images to learn more about us.
 
            </p> 
-            <div class="button-container">
-                 <a class="cv" target="_blank" href="https://drive.google.com/file/d/1naLtiaY2oQty4MtqyAZO41obyzwUggQc/view?usp=sharing"><button id="contact-button" class="dark">CV Emanuel</button></a> 
-                <a class="cv" target="_blank" href="https://drive.google.com/file/d/1h9Qlri1o_WfdxIFcEGcatd8WfB95P4on/view?usp=sharing"><button class="dark">V Martin</button></a> 
+            
+        </div>
+        <div class="members">
+            <div class="member">
+                <div class="face front">
+                    <img src="./assets/imagenes/martin.jpg" alt="martin" class="member-image">
+                </div>
+                <div class="face back">
+                    <p class="rol">FullStack Developer</p>
+                    
+                    <a target="_blank" href="https://drive.google.com/file/d/1h9Qlri1o_WfdxIFcEGcatd8WfB95P4on/view?usp=sharing"><button class="dark">Learn More</button></a>
+                </div>
+            </div>
+            <div class="member">
+                <div class="face front">
+                    <img src="./assets/imagenes/ema.jpg" alt="ema" class="member-image">
+                </div>
+                <div class="face back">
+                    <p class="rol">Frontend Developer</p>
+                    
+                    <a target="_blank" href="https://drive.google.com/file/d/1naLtiaY2oQty4MtqyAZO41obyzwUggQc/view?usp=sharing"><button class="dark">Learn More</button></a>
+                </div>
             </div>
         </div>
-        <div class="image">
-            <img src="./assets/imagenes/about.png" alt="about">
-        </div>
+        
     </section>
 
     <section  class="tecnology">
@@ -353,14 +377,27 @@
             <p class="form-titles">We are here to guide you to build your dream. Trust is earned through delivering results and great people never work alone.</p>
             <form id="form" action="https://formspree.io/f/xjvdgnqy"
             method="POST">
-                <label  for="name">Full Name*</label>
-                <input class="field" type="text" name="name" id="" required>
-                <label for="email">Email*</label>
-                <input class="field" type="email" name="email" id="" required>
-                <label for="phone">Phone</label>
-                <input class="field" type="tel" name="" id="">
-                <label for="message">Message*</label>
-                <textarea name="message" id="" cols="10" rows="5" required></textarea>
+                <div class="input-field">
+                    <input  type="text" name="name" id="" required>
+                    <label for="name">Full Name</label>
+
+                </div>
+                <div class="input-field">
+                    <input  type="email" name="email" id="email"  required>
+                    <label for="email">Email</label>
+
+                </div>
+                
+                <div class="input-field">
+                    <input  type="tel" name="phone" required >
+                    <label for="phone">Phone</label>
+
+                </div>
+                <div class="input-field">
+                    <textarea name="message" id="" cols="10" rows="5"  required></textarea>
+                    <label for="text">Message</label>
+
+                </div>
                 <span class="success">Thank you for your message</span>
                 <input class="dark" type="submit" value="Send">
                 

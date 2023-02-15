@@ -70,3 +70,19 @@ window.addEventListener('load', () => {
         
     }, 1000);
 });
+
+
+//validar email
+const email = document.querySelector('#email');
+
+// form.addEventListener('submit', ()=>{
+    
+//     const validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+//     if(validEmail.test(email)){
+//         console.log('el email esta bien guacho');
+//     }
+//     else{
+//         console.log('hasta las manos');
+//     }
+// });
+

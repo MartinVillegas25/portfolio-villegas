@@ -49,10 +49,29 @@ h1{
 @media only screen and (max-width:768px){
 section.opening div.button-container button{
  width: 90%;   
+ margin-left: 0px;
 }
 
 }    
 
+/*up arrow*/
+@media only screen and (max-width:768px){
+    .arrow-up{
+        height: 50px;
+        width: 50px;
+        bottom: 1rem;
+        right: 1rem;
+        
+        border-radius: 50%;
+        z-index: 999;
+    }
+    .arrow-up img.up{
+        width: 100%;
+        height: 100%;
+       
+    }
+
+}
 
 /*services*/
 @media only screen and (max-width:768px){
@@ -106,11 +125,11 @@ section.opening div.button-container button{
 }
 @media only screen and (max-width:1130px){
     div.bio{
-        margin:0;
+        
         text-align: start;
         max-width: 600px;
         width: 100%;
-        margin: 0 auto;
+        margin: 0 auto 21px;
     }
     div.bio p{
         font-size: 16px;
@@ -119,23 +138,30 @@ section.opening div.button-container button{
         padding-bottom:5px;
         padding-top:21px;
     }
-    div.image{
-        width: 100%;
-        text-align: center;
-    
-    }
+
     section.about{
         padding:48px 25px;
     }
     section.about div.bio{  
         order:2;        
     }
-    section.about div.image{  
-        order:1;        
+    .members{
+        display: block;
+        max-width: 400px;
     }
-    div.bio button.dark{
-        width: 100%;
+    .member{
+        width: 300px;
+        height: 300px;
+        margin: 10px auto 21px;
     }
+    .member .front{
+        box-shadow: 1px 5px 5px 1px #fff;
+    }
+    .member .back button.dark{
+        width:250px;
+
+    }
+   
 }
 
 /*tecnologias*/
@@ -247,18 +273,16 @@ section.opening div.button-container button{
 
 /*contact form*/
 @media only screen and (max-width:768px){
-    img.close-contact{
-        filter: invert(0);
-    }
+   
     p.close-contact{
         
         top:2rem;
         
     }
     div.form{
-        padding: 60px 25px;
+        padding: 60px 25px 48px 25px;
         width: 100%;
-        height: 100vh;
+        height: 100%;
 
     }
     h3.form-titles, p.form-titles{
@@ -266,6 +290,7 @@ section.opening div.button-container button{
         width: 100%;
 
     }
+   
     input.field{
         width: 100%;;
     }
@@ -279,6 +304,15 @@ section.opening div.button-container button{
         width:100%;        
     
     }
+    .contact-form{
+        overflow-y: scroll;
+        
+        
+    }
+    .contact-container{
+        height: auto;
+    }
+
 }
 
 /*portofolio poopup*/
